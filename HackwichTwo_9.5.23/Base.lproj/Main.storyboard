@@ -34,6 +34,16 @@
                                     <action selector="secondButtonPressMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klF-Zx-KOt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUI-PA-qRq">
+                                <rect key="frame" x="156" y="350" width="105" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Segue Push "/>
+                                <connections>
+                                    <segue destination="r7q-WJ-QPh" kind="show" id="PUb-3R-Fqm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,10 +53,29 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jKt-qO-huc">
+            <objects>
+                <viewController id="r7q-WJ-QPh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tq-jF-idc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n8F-Lp-7Ru"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h7c-xb-S9G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0M4-4U-ltf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="84"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
